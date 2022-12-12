@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        justify-content: center;
+        margin-top: 200px;
+    }
+</style>
+
+<body>
+    <h1>Create Your Account</h1>
+    <form id="form" action="/" method = "get">
+        <table cellspacing="2" align ="center" cellpadding="8" border="0">
+
+            <tr>
+                <td>UserName:</td>
+                <td><input type="text" name="fname" id="fname" ></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" ></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" id="password" ></td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="cpassword" id="cpassword" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Signup" onclick="Create()"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+
+        </table>
+    </form>
+
+    <script>
+
+    function Create(){
+        var name = document.getElementById("fname").value;
+        var mail = document.getElementById("email").value;
+        var pass = document.getElementById("password").value;
+        var cpass = document.getElementById("cpassword").value;
+
+        var letters = /^[A-Za-z]+$/;
+        var email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+        if(name == '' || pass == '' || mail == '' || cpass == ''){
+            alert("Input Values!");
+        }
+        else if(name.length <2){
+            alert("Please Input Longer Username!");
+        }
+        else if(pass.length < 5){    
+            alert("Please Input Longer Password!");
+        }  
+        else if(!name.match(letters)){
+            alert("Please Input Letters Only!");
+        }
+        else if(!mail.match(email)){
+            alert("Please Input Valid Email!");
+        }
+        else if(pass != cpass){
+            alert("Password Not Match!");
+        }
+        else{
+            alert("Account Created! Redirecting to Homepage...");
+            window.location = "Image.html";
+            return false;
+        }
+}
+
+
+   </script>
+</body>
+</html>

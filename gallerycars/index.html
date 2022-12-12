@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Cars by Yuan Mig Paray</title>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="music/Highway to Hell.wav">
+        <source src="music/Highway to Hell.mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+
+
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="video/video3.mp4" type="video/mp4"> 
+    </video>
+
+
+    <div class="full-img" id="fullImgBox">
+        <img src="image/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+    <div class="img-gallery">
+        <img src="image/img1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img8.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img9.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img10.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img11.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img12.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img13.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img14.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img15.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img16.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img17.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img18.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img19.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img20.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img21.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img22.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img23.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img24.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img25.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img26.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img27.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img28.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img29.jpg" onclick="openFullImg(this.src)">
+        <img src="image/img30.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+
+    </script>
+</body>
+</html>

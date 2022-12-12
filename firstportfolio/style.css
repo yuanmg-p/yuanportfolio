@@ -1,0 +1,42 @@
+img {
+	border-radius: 10%;
+	width: 250px;
+	height: 400px;
+}
+
+body{
+	text-align: center;
+	background-image: url(https://i.pinimg.com/originals/b3/9c/0c/b39c0c466fa2e880bcf8b904305041aa.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    
+
+}
+
+p{
+	font-style: calc();
+    font-size: 25px;
+	color: rgb(246,224,181);
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(238,169,144)
+    
+}
+
+nav {
+	border: 2px;
+	background-color: rgb(135, 206, 235);
+	padding: 12px;
+	text-decoration: none;
+}
+a{
+	color: black;
+	font-size: 20px;
+}
+
+.header {
+	float: center;
+}
